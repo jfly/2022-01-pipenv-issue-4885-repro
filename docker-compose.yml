@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  jfly-devpi:
+    build: ./devpi
+  pipenv-broken:
+    build:
+      context: ./pipenv
+      args:
+        JFLY_PIPENV_VERSION: 2021.11.23
+  pipenv-working:
+    build:
+      context: ./pipenv
+      args:
+        JFLY_PIPENV_VERSION: 2020.11.15

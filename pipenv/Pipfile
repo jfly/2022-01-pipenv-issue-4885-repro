@@ -1,0 +1,10 @@
+[requires]
+python_version = "3.8"
+
+[[source]]
+url = "http://jfly-devpi:3141/root/pypi/+simple/"
+name = "jfly local"
+verify_ssl = false
+
+[packages]
+greenlet = "*"
